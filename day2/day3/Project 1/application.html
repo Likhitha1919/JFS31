@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Infosys Job Application Form</title>
+</head>
+<body>
+    <h2>Infosys Job Application Form</h2>
+    <form action="#" method="post"></form>
+    <label for="role"><b>Role Applying For:</b></label>
+            <select id="role" name="role" required>
+                <option value="">--select Role--</option>
+                <option value="Software Engineer">Software Engineer</option>
+                <option value="Data Analyst">Data Analyst</option>
+                <option value="Process Associate">Process Associate</option>
+                <option value="frondend developer">Frondend Developer</option>
+                <option value="tester">Tester</option>
+                </select><br><br>
+    
+        <fieldset>
+            <legend><b>Personal Information:</b></legend>
+            <label for="fullname">Full Name:</label>
+            <input type="text" id="fullname" name="fullname" required><br><br>
+
+            <label for="dob" id="dob"> Date Of Birth:</label>
+            <input type="date" id="dob" name="dob" required><br><br>
+
+            <label><b>Gender:</b></label><br>
+<input type="radio" id="male" name="gender" value="Male" required>
+<label for="male">Male</label><br>
+
+<input type="radio" id="female" name="gender" value="Female">
+<label for="female">Female</label><br>
+
+<input type="radio" id="other" name="gender" value="Other">
+<label for="other">Other</label><br>
+
+<label for="nationality" id="nationality"> Nationality:</label>
+            <input type="text" id="nationality" name="nationality" required><br><br>
+
+            <label for="state" id="state"> State:</label>
+            <input type="text" id="state" name="state" required><br><br>
+
+            <label for="city" id="city"> City:</label>
+            <input type="text" id="city" name="city" required><br><br>
+
+        </fieldset><br><br>
+
+   <fieldset>
+    <legend>
+        <b>Contact Information:</b>
+    </legend>
+    <label for="email"> Email:</b></label>
+    <input type="email" id="email" name="email" required><br><br>
+
+    <label for="phone"> <b>Phone:</b></label>
+    <input type="tel" id="phone" name="phone" required><br><br>
+
+    <label for="address" ><b>Address:</b></label><br><br>
+    <textarea id="address" name="address" rows="4" cols="50" required></textarea>
+</fieldset><br><br>
+
+<fieldset>
+    <legend><b>Education</legend>
+    <label for="qualification"><b>Highest Qualification:</b></label>
+    <select id="qualification" name="qualification" required>
+                <option value="">--select--</option>
+                <option value="B.SC">B.SC</option>
+                <option value="B.Tech">B.Tech</option>
+                <option value="B.com">B.Com</option>
+                <option value="M.SC">M.SC</option>
+                <option value="M.Tech">M.Tech</option>
+                <option value="MBA">MBA</option>
+                </select><br><br>
+
+    <label for="university"><b>University:</b></label>
+    <input type="text" id="university" name="university" required><br><br>
+
+    <label for="year"><b>Year Of Passing:</b></label>
+    <input type="number" id="yes" name="year"  min="1900" max="2099"><br><br>
+</fieldset><br><br>
+
+<fieldset>
+    <legend> <b>Work Experience:</b></legend>
+    <label for="experience">Experience</label>
+    <input type="number" id="experience" name="experience" min="0" required><br><br>
+
+    <label for="skills"><b>Skills:</b></label><br>
+    <textarea id="skills" name="skills" rows="4" cols="50" required></textarea>
+     </fieldset><br><br>
+    <fieldset>
+        <legend><b>Resume:</b></legend>
+        <label for="Resume">Resume</label>
+    <input type="file" id="Resume" name="Resume" accept=".pdf,.doc,.docx" required><br><br>
+    </fieldset><b><br>   
+    <input type="submit" value="Submit Application" required><br><br>
+   
+    </form>
+</body>
+</html>
