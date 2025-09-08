@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    /*  */element selector
+    p{
+        color: green;
+    }
+
+
+/* class selector */
+.highlight{
+    color: red;
+}
+
+/* id selector */
+#unique {
+ color: purple;
+}
+
+/* universal selector */
+* {
+    color:blue;
+}
+
+/* decendant selector */
+div p{
+    color: orange;
+}
+
+/* child selector */
+div > p{
+color: pink;
+}
+/* attribute selector */
+[title] {
+    color: brown;
+}
+
+/* grouping selector */
+h1,p{
+    color:teal;
+}
+</style>
+<body>
+   
+    <p>This paragraph is green</p>
+    <p>Another paragraph is green</p>
+    <h1>Heading is not affected</h1>
+
+    <p class="highlight" >this text is red</p>
+    <p>This text is red because p is selector element</p>
+
+    <p id="unique">This text is purple</p>
+    <p>This text is red because p is selector element</p>
+
+    <p>All text turns blue</p>
+    <h1>Heading is also blue</h1>
+
+    <div>
+        <p>This paragraph is inside div and orange</p>
+        </p>
+    </div>
+    <p>This paragraph is outside div and normal</p>
+
+   <div>
+    <p>Direct child (pink)</p>
+    <div>
+        <p>next paragraph not affected</p>
+    </div>
+   </div>
+
+    <p title="hello">Paragraph with title (brown)</p>
+    <p> no title(normal)></p>
+
+    <h1>Heading teal</h1>
+    <p> Paragraph teal</p>
+    <div> Div is nor affected</div>
+</body>
+</html>
